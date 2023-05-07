@@ -41,7 +41,7 @@ export const RatingStyled = styled.span`
   font-weight: 700;
   color: ${({ ratingColor }) => {
     if (ratingColor < 40) return 'orangered';
-    if (ratingColor > 40 && ratingColor < 70) return '#F6BA6F';
-    if (ratingColor > 70) return 'green';
+    if (ratingColor >= 40 && ratingColor < 70) return '#F6BA6F';
+    if (ratingColor >= 70) return 'green';
   }};
 `;
